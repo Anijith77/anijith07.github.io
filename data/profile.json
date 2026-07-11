@@ -1,0 +1,14 @@
+{
+  "name": "Alex Rivera",
+  "title": "Web Developer",
+  "credential": "Diploma in Web Development",
+  "location": "Remote / Open to relocation",
+  "about": "I build fast, accessible, full-stack web products. Recently completed a Web Development diploma with a focus on JavaScript, React, and Node.js — now looking for a junior/associate developer role where I can keep shipping real things.",
+  "availability": "Open to work",
+  "email": "alex.rivera.dev@example.com",
+  "socials": {
+    "github": "https://github.com/example",
+    "linkedin": "https://linkedin.com/in/example",
+    "resume": "/resume.pdf"
+  }
+}

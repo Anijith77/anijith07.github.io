@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Alex Rivera — Web Developer</title>
+<meta name="description" content="Portfolio of Alex Rivera, Web Developer — diploma in Web Development, full-stack projects, and contact." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+
+<div class="grid-overlay" aria-hidden="true"></div>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="topbar">
+  <div class="wrap topbar__inner">
+    <a href="#home" class="brand">
+      <span class="brand__bracket">[</span>alex.rivera<span class="brand__bracket">]</span>
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <a href="#home" data-path>/home</a>
+      <a href="#about" data-path>/about</a>
+      <a href="#projects" data-path>/projects</a>
+      <a href="#skills" data-path>/skills</a>
+      <a href="#contact" data-path>/contact</a>
+    </nav>
+    <a href="#contact" class="btn btn--ghost btn--small nav__cta">Hire me →</a>
+    <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ===================== HERO ===================== -->
+  <section id="home" class="hero wrap">
+    <div class="hero__copy">
+      <p class="eyebrow"><span class="dot" id="statusDot"></span> <span id="statusText">checking availability…</span></p>
+      <h1 class="hero__title">
+        Building the web,<br />
+        <span class="accent">one clean commit</span> at a time.
+      </h1>
+      <p class="hero__lede" id="heroLede">
+        I'm a web developer with a fresh diploma and a habit of shipping real, working software — not just tutorials.
+      </p>
+      <div class="hero__actions">
+        <a href="#projects" class="btn btn--solid">View projects</a>
+        <a href="/resume.pdf" class="btn btn--outline" id="resumeLink">Download résumé</a>
+      </div>
+    </div>
+
+    <div class="terminal" role="group" aria-label="Interactive terminal introduction">
+      <div class="terminal__bar">
+        <span class="terminal__dot terminal__dot--r"></span>
+        <span class="terminal__dot terminal__dot--y"></span>
+        <span class="terminal__dot terminal__dot--g"></span>
+        <span class="terminal__title">alex@portfolio: ~</span>
+      </div>
+      <div class="terminal__body" id="terminalBody" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section id="about" class="section wrap">
+    <p class="section__path">/about</p>
+    <div class="about__grid">
+      <div class="about__text">
+        <h2>Diploma-trained. Production-minded.</h2>
+        <p id="aboutText">Loading bio…</p>
+        <ul class="about__facts" id="aboutFacts"></ul>
+      </div>
+      <div class="about__card blueprint-card">
+        <h3>Credential</h3>
+        <dl class="credential">
+          <div><dt>Program</dt><dd id="credProgram">Web Development Diploma</dd></div>
+          <div><dt>Focus</dt><dd>JavaScript · React · Node.js</dd></div>
+          <div><dt>Capstone</dt><dd>StudyFlow — top of cohort</dd></div>
+          <div><dt>Status</dt><dd id="credStatus">Loading…</dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PROJECTS ===================== -->
+  <section id="projects" class="section wrap">
+    <p class="section__path">/projects</p>
+    <div class="section__head">
+      <h2>Selected builds</h2>
+      <p class="section__sub">Pulled live from <code>/api/projects</code> — filter by type below.</p>
+    </div>
+
+    <div class="filter-row" id="filterRow" role="tablist" aria-label="Filter projects by type"></div>
+
+    <div class="project-grid" id="projectGrid">
+      <div class="skeleton-card"></div>
+      <div class="skeleton-card"></div>
+      <div class="skeleton-card"></div>
+    </div>
+  </section>
+
+  <!-- ===================== SKILLS ===================== -->
+  <section id="skills" class="section wrap">
+    <p class="section__path">/skills</p>
+    <div class="section__head">
+      <h2>Stack &amp; tools</h2>
+      <p class="section__sub">Self-rated, weighted by hands-on project use.</p>
+    </div>
+    <div class="skills-grid" id="skillsGrid"></div>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section id="contact" class="section wrap">
+    <p class="section__path">/contact</p>
+    <div class="contact__grid">
+      <div class="contact__intro">
+        <h2>Let's build something.</h2>
+        <p>Open to junior/associate developer roles, freelance builds, and good problems. Message goes straight to my inbox via the API below.</p>
+        <div class="contact__meta">
+          <a id="emailLink" href="#">alex.rivera.dev@example.com</a>
+          <div class="contact__socials">
+            <a id="githubLink" href="#" target="_blank" rel="noopener">GitHub</a>
+            <a id="linkedinLink" href="#" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+
+      <form id="contactForm" class="contact-form" novalidate>
+        <div class="field">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" autocomplete="name" required />
+          <span class="field__error" id="err-name"></span>
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" autocomplete="email" required />
+          <span class="field__error" id="err-email"></span>
+        </div>
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+          <span class="field__error" id="err-message"></span>
+        </div>
+        <button type="submit" class="btn btn--solid btn--block" id="submitBtn">
+          <span id="submitLabel">Send message</span>
+        </button>
+        <p class="form__status" id="formStatus" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer wrap">
+  <p>&copy; <span id="year"></span> Alex Rivera — built with Node.js, Express &amp; no framework on the frontend, on purpose.</p>
+  <p class="footer__meta">Status endpoint: <code>GET /api/profile</code></p>
+</footer>
+
+<script src="/js/script.js"></script>
+</body>
+</html>

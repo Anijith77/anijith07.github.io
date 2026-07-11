@@ -1,0 +1,62 @@
+[
+  {
+    "id": "orbit-crm",
+    "name": "Orbit CRM",
+    "tag": "full-stack",
+    "year": "2026",
+    "summary": "A lightweight CRM for freelancers — pipeline tracking, invoice generation, and client timelines.",
+    "stack": ["React", "Node.js", "Express", "MongoDB"],
+    "highlights": [
+      "Built REST API with JWT auth and role-based access",
+      "Cut invoice creation time from 6 minutes to under 40 seconds",
+      "Deployed with CI/CD via GitHub Actions"
+    ],
+    "live": "#",
+    "repo": "#"
+  },
+  {
+    "id": "pulse-analytics",
+    "name": "Pulse Analytics",
+    "tag": "frontend",
+    "year": "2025",
+    "summary": "Real-time dashboard visualizing website traffic using WebSockets and D3.",
+    "stack": ["JavaScript", "D3.js", "WebSockets", "Express"],
+    "highlights": [
+      "Streams live event data to 500+ concurrent dashboard sessions",
+      "Custom charting layer built without a charting library",
+      "Lighthouse performance score of 96"
+    ],
+    "live": "#",
+    "repo": "#"
+  },
+  {
+    "id": "recipe-box",
+    "name": "RecipeBox",
+    "tag": "api",
+    "year": "2025",
+    "summary": "A public REST API for community recipes, with search, ratings, and image uploads.",
+    "stack": ["Node.js", "Express", "PostgreSQL", "AWS S3"],
+    "highlights": [
+      "Designed normalized schema across 8 related tables",
+      "Rate-limited public endpoints serving 10k+ requests/day",
+      "Wrote OpenAPI docs consumed by 3 external student projects"
+    ],
+    "live": "#",
+    "repo": "#"
+  },
+  {
+    "id": "studyflow",
+    "name": "StudyFlow",
+    "tag": "diploma capstone",
+    "year": "2024",
+    "summary": "Capstone project for the Web Development diploma — a Pomodoro-based study planner with progress analytics.",
+    "stack": ["HTML", "CSS", "JavaScript", "Express", "SQLite"],
+    "highlights": [
+      "Graded top of cohort for architecture and code quality",
+      "Implemented offline-first mode with localStorage sync queue",
+      "Presented to a panel of 5 industry reviewers"
+    ],
+    "live": "#",
+    "repo": "#"
+  }
+]

@@ -1,0 +1,20 @@
+{
+  "frontend": [
+    { "name": "HTML5", "level": 95 },
+    { "name": "CSS3 / Sass", "level": 92 },
+    { "name": "JavaScript (ES6+)", "level": 90 },
+    { "name": "React", "level": 85 }
+  ],
+  "backend": [
+    { "name": "Node.js", "level": 88 },
+    { "name": "Express", "level": 90 },
+    { "name": "REST APIs", "level": 90 },
+    { "name": "MongoDB / SQL", "level": 80 }
+  ],
+  "tooling": [
+    { "name": "Git / GitHub", "level": 92 },
+    { "name": "Docker", "level": 65 },
+    { "name": "CI/CD", "level": 70 },
+    { "name": "Figma", "level": 75 }
+  ]
+}
